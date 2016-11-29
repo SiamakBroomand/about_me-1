@@ -15,7 +15,7 @@ var response1 = prompt('Does Sam have any cats?').toLowerCase();
 
 if (response1 === 'yes' || response1 ==='y') {
   alert('Yes, Sam does have three cats!');
-} else if (response1 === 'no' || response1 ==='n'); {
+} else if (response1 === 'no' || response1 ==='n') {
   alert('Sorry, you\'re wrong, Sam has three cats');
 } else {
   alert('Use either \"yes\" or \"no\"');
