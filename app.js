@@ -14,6 +14,7 @@
 
 var response1 = prompt('Does Sam have any cats?').toLowerCase();
 
+
 if (response1 === 'yes' || response1 ==='y') {
   alert('Yes, Sam does have three cats!');
 } else if (response1 === 'no' || response1 ==='n') {
@@ -34,7 +35,7 @@ if (response2 === 'yes' || response2 ==='y') {
   alert('Use either \"yes\" or \"no\"');
 }
 
-console.log('The user selected ' + response2 + ' to the question');
+console.log('The user selected ' + response2 + ' to the question.');
 
 var response3 = prompt('Does this prompt require a console.log message to appear?').toLowerCase();
 
