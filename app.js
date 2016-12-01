@@ -1,6 +1,6 @@
 'use strict';
 
-var counterNumbers = 0;
+
 
 // if (condition is true) {
 //   do something;
@@ -12,6 +12,7 @@ var counterNumbers = 0;
 // }
 
 
+var counterNumbers = 0;
 var response1 = prompt('Does Sam have any cats?').toLowerCase();
 
 
@@ -108,37 +109,31 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-
+var placesLived = ['denver', 'seattle', 'miami', 'chicago', 'los angeles', 'san diego', 'honolulu'];
 var counter = 0;
 var gotCityRight = false;
-var placesLived = ['denver, seattle, miami, chicago, los angeles, san diego, honolulu'];
+while (counter < 6){
 
+  var yourCityGuess = prompt('Guess a city that Jay has lived in? You have 6 tries!').toLowerCase();
 
-do while (counter < 6){
-
-  yourCityGuess = prompt('Guess a city that Jay has lived in? You have 6 tries!').toLowerCase(); {
   for (var j = 0; j < placesLived.length; j++) {
-
-
     console.log(yourCityGuess);
 
     if(yourCityGuess === placesLived[j]) {
       gotCityRight = true;
       break;
     }
-  if(gotCityRight) {
-      alert ('yes! you gussed ' + yourCityGuess + ', which is one of the places Jay has lived!!');
-      alert ('He has lived in denver, seattle, miami, chicago, los angeles, san diego, and honolulu!')
-
-    } else{
-      alert ('Jay has never lived in ' + yourCityGuess + ' try again!');
-    }
-      console.log(counter);
-      counter++;
-    }
   }
+  if(gotCityRight === true) {
+    alert ('yes! you gussed ' + yourCityGuess + ', which is one of the places Jay has lived!!');
+    alert ('He has lived in denver, seattle, miami, chicago, los angeles, san diego, and honolulu!');
+    break;
+  } else{
+    alert ('Jay has never lived in ' + yourCityGuess + ' try again!');
+  }
+  console.log(counter);
+  counter+= 1;
+}
 
-
-
-  var counterNumbers = alert('nice job you got ' + counterNumbers + ' out of 7!');
-  console.log('User got ' + counterNumbers + ' questions right');
+counterNumbers = alert('nice job you got ' + counterNumbers + ' out of 7!');
+console.log('User got ' + counterNumbers + ' questions right');
