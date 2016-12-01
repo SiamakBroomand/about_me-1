@@ -72,3 +72,42 @@ if (response5 === 'yes' || response5 ==='y') {
 }
 
 console.log('The user selected ' + response5 + ' to rushing the lab today.')
+
+// As a developer, I want to add a sixth question to my guessing game that takes numeric input by prompting a user to guess a number (for instance, "What is my favorite number?" or "How many Pokémon did I catch yesterday?"), and indicates to the user whether the guess is 'too high' or 'too low', and gives the user exactly four opportunities to get the correct answer, so that my fancy programming skills are showcased.
+
+var age = 26;
+
+while (age !== 26);
+for (var i = 0; i < 4; i++) {
+  var yourGuess = (parseInt(prompt('What is your guess for Jay\'s age?')));
+
+  if (yourGuess === age) {
+    alert('You got it right!! Jay is' + age + '!');
+    break;
+  }
+  else if (yourGuess > 26) {
+    alert('Try to guess lower!');
+  }
+  else if (yourGuess < 26) {
+    alert('Try to guess higher!')
+  }
+}
+
+var counter = 0;
+var placesLived = ['denver, seattle, miami, chicago, los angeles, san diego, honolulu, '].toLowerCase();
+
+while(counter > 6){
+
+  for (var j = 0; j < placesLived.length; j++) {
+
+    var yourCityGuess = parseInt(prompt('Guess a city that Jay has lived in? You have 6 tries!').toLowerCase());
+
+    if(yourCityGuess === placesLived[j]) {
+      alert ('yes! you guessed ' + yourCityGuess + ', which is one of the places Jay has lived!!');
+
+      counter = 10;
+    }
+    counter++;
+    console.log(counter);
+  }
+}
