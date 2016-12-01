@@ -114,9 +114,9 @@ var gotCityRight = false;
 var placesLived = ['denver, seattle, miami, chicago, los angeles, san diego, honolulu'];
 
 
-    while(counter < 6){
+do while (counter < 6){
 
-  yourCityGuess = prompt('Guess a city that Jay has lived in? You have 6 tries!').toLowerCase();{
+  yourCityGuess = prompt('Guess a city that Jay has lived in? You have 6 tries!').toLowerCase(); {
   for (var j = 0; j < placesLived.length; j++) {
 
 
@@ -131,14 +131,14 @@ var placesLived = ['denver, seattle, miami, chicago, los angeles, san diego, hon
       alert ('He has lived in denver, seattle, miami, chicago, los angeles, san diego, and honolulu!')
 
     } else{
-//       alert ('Jay has never lived in ' + yourCityGuess + ' try again!');
-//     }
-//       console.log(counter);
-//       counter++;
-//     }
-//   }
-//
-//
-//
-//   var counterNumbers = alert('nice job you got ' + counterNumbers + ' out of 7!');
-//   console.log('User got ' + counterNumbers + ' questions right');
+      alert ('Jay has never lived in ' + yourCityGuess + ' try again!');
+    }
+      console.log(counter);
+      counter++;
+    }
+  }
+
+
+
+  var counterNumbers = alert('nice job you got ' + counterNumbers + ' out of 7!');
+  console.log('User got ' + counterNumbers + ' questions right');
